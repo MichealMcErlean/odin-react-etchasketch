@@ -1,3 +1,68 @@
-h1 {
-  font-size: 2.4rem;
+main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header, footer {
+  background-color: #222222;
+  color:antiquewhite;
+  padding: 5px;
+}
+
+article {
+  display:grid;
+  grid-template-columns: clamp(300px, 300px + 5vw, 400px) 1fr;
+  grid-template-rows: 1fr;
+}
+
+#options {
+  background-color: #444444;
+  color: white;
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  gap: 50px;
+  justify-items:flex-start;
+}
+
+#options button {
+  font-size: 1.8rem;
+  background-color:antiquewhite;
+  border: 3px solid #222222;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+#options button:active {
+  border: 3px solid antiquewhite;
+  background-color:#222222;
+  color:antiquewhite;
+}
+
+
+#canvas {
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+#container {
+  height: 960px;
+  width: 960px;
+  outline: 5px groove black;
+  background-color: white;
+  display: grid;
+}
+
+.grid-cell {
+  aspect-ratio: 1 / 1;
+  border: 1px solid #eeeeee;
 }
