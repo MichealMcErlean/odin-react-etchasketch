@@ -1,16 +1,6 @@
-# React + Vite
+# Etch-a-Sketch
+## An Odin Project exercise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redoing this one in React for the practice. I don't foresee needing much more from React than keeping track of some state; I'm more interested in how I have to change things to account for needing to do re-renders frequently (unlike the original project, where a cell naturally held its state until a full refresh was done.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Also going to try adding some stuff - giving a choice between picking a colour or going rainbow lilke the original challenge option, make the opacity challenge an optional mode. And I'm going to try making drawing on the board require holding the mouse button down while dragging - see how much of a difference that makes to implementation.
